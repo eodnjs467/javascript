@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+  function func(){
+    var msg = "";
+    var time_test = document.getElementById("time_test").value;
+    var time_hour = new Date().getHours();
+
+    if (time_hour == parseInt(time_test)){
+      alert("동일합니다");
+      document.write("이건 출력 테스트")
+    }
+
+    if (time_test < 12) {
+      msg = "good morning";
+    }else if (time_test < 18) {
+      msg = "good Afternoon";
+    } else {
+      msg = "good night";
+    }
+    alert(msg);
+  }
+
+</script>
+<form method="post" action="..." style="border: gray; background-color: yellow">
+  <input type="text" id="time_test" placeholder="시간 입력하세요!"/>
+  <button type="button" value="확인" onclick="func();">누르세오.</button>
+</form>
+</body>
+</html>

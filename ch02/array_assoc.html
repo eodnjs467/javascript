@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  var i;
+  var fruits = new Array();
+  fruits[0] = "Apple";
+  fruits[1] = "Orange";
+  fruits[2] = "Grape";
+  fruits.push('apple');
+  fruits.push('orange');
+  fruits.push('grape');
+  for (i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "</br>");
+  }
+  document.write("</br>");
+  for (i in fruits) {
+    document.write(fruits[i] + "</br>");
+  }
+</script>
+</body>
+</html>
